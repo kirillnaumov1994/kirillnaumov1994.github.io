@@ -1,0 +1,1 @@
+importScripts('https://pxl.kirill-naumov.dev.altkraft.com/service-worker.js?id=MXwx');
