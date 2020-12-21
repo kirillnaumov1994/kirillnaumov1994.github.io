@@ -17,16 +17,15 @@ There is nothing interesting here, seriously.
  <button id="init_sub">Подписаться на уведомления</button> // Кнопка подписки
  
 <script>
-  $("#init_sub").click(function(){ // По клику на кнопку..
-    try {
-        var akPush = new AKPush();
-        akPush.initSubscription() // ..показать форму подписки
+    document.getElementById('init_sub').addEventListener('click', function() { // По клику на кнопку..
+        try {
+            var akPush = new AKPush();
+            akPush.initSubscription() // ..показать форму подписки
         }
-    catch (e) {
-      console.log(e); // Или записать ошибку в консоль браузера
-              }
-                                  });
-  
+        catch (e) {
+            console.log(e); // Или записать ошибку в консоль браузера
+        }
+    });
 </script>
     
     <!-- The core Firebase JS SDK is always required and must be listed first -->
